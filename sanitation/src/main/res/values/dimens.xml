@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_horizontal">16dp</dimen>
+    <dimen name="margin_vertical">20dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="left_title_width">120dp</dimen>
+    <dimen name="text_size_10">10.0sp</dimen>
+    <dimen name="product_option_height">60dp</dimen>
+    <dimen name="title_height">48dp</dimen>
+    <dimen name="listview_margin_hor">10dp</dimen>
+    <dimen name="corners_radius">10dp</dimen>
+    <dimen name="list_item_img_width">50dp</dimen>
+    <dimen name="text_size_0">12.0sp</dimen>
+    <dimen name="text_size_1">15.0sp</dimen>
+    <dimen name="text_size_2">18.0sp</dimen>
+    <dimen name="text_size_3">20.0sp</dimen>
+    <dimen name="text_size_4">14.0sp</dimen>
+    <dimen name="text_size_5">16.0sp</dimen>
+    <dimen name="radio_group_height">35dp</dimen>
+    <dimen name="textSize_33px">21sp</dimen>
+	<dimen name="dimen_margin_circle">4dp</dimen>
+    <dimen name="dimen_margin_circle.negative">-4dp</dimen>
+</resources>

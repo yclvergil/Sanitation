@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_lay" />
+
+    <LinearLayout
+        android:id="@+id/checkup_layou_site"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:background="@color/color_cccccc"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/checkup_site"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="49dp"
+                android:text="区域"
+                android:textColor="@color/color_333333" />
+
+            <ImageView
+                android:id="@+id/checkip_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/personnel_image1" />
+        </LinearLayout>
+    </LinearLayout>
+    
+	<ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/color_cccccc"
+        android:dividerHeight="0.5dp"
+        android:listSelector="#00000000"
+        android:scrollbars="none" >
+    </ListView>    
+
+    <!-- <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/checkup_prlistview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/color_e6e6e6"
+        android:dividerHeight="0.5dp"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/color_333333"
+        ptr:ptrMode="both" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView> -->
+
+</LinearLayout>

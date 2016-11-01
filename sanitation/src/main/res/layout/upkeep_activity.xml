@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_lay" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <!-- 所属车辆 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="所属车辆:"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/upkeep_car"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="13dp"
+                        android:background="@drawable/upkeep_image4"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="13dp"
+                        android:textColor="@color/color_999999"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/upkeep_car" >
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/upkeep_image2" />
+
+                        <ImageView
+                            android:layout_width="19dp"
+                            android:layout_height="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/upkeep_image1" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 保养日期 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="保养日期:"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/upkeep_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="13dp"
+                    android:background="@drawable/upkeep_image4"
+                    android:gravity="center_vertical"
+                    android:text="2016-3-20"
+                    android:paddingLeft="13dp"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_999999" />
+            </LinearLayout>
+
+            <!-- 保养类型 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="保养类型:"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/upkeep_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="13dp"
+                        android:background="@drawable/upkeep_image4"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="13dp"
+                        android:textColor="@color/color_999999"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/upkeep_type" >
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/upkeep_image2" />
+
+                        <ImageView
+                            android:layout_width="19dp"
+                            android:layout_height="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/upkeep_image1" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 维修项目 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="维修项目:"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/upkeep_items"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="13dp"
+                        android:background="@drawable/upkeep_image4"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="13dp"
+                        android:textColor="@color/color_999999"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/upkeep_items" >
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/upkeep_image2" />
+
+                        <ImageView
+                            android:layout_width="19dp"
+                            android:layout_height="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/upkeep_image1" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 维修原因 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="top"
+                    android:text="维修原因:"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/upkeep_cause"
+                    android:layout_width="fill_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="13dp"
+                    android:background="@drawable/upkeep_image5"
+                    android:gravity="top"
+                    android:maxLines="2"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:paddingTop="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_999999" />
+            </LinearLayout>
+
+            <!-- 公里数 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="公里数:"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/upkeep_kilometre"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="29dp"
+                    android:background="@drawable/upkeep_image4"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dp"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_999999" />
+            </LinearLayout>
+
+            <!-- 维修费用 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="维修费用:"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/upkeep_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="13dp"
+                    android:background="@drawable/upkeep_image4"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dp"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_999999" />
+            </LinearLayout>
+
+            <!-- 经办人 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="经办人:"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/upkeep_person"
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="29dp"
+                    android:background="@drawable/upkeep_image4"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dp"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_999999" />
+            </LinearLayout>
+
+            <!-- 下次保养事件 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="下次保养时间:"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/upkeep_next"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/upkeep_image4"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dp"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_999999" />
+            </LinearLayout>
+
+            <!-- 备注 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="top"
+                    android:text="备    注:"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/upkeep_remarks"
+                    android:layout_width="fill_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="29dp"
+                    android:background="@drawable/upkeep_image5"
+                    android:gravity="top"
+                    android:maxLines="2"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:paddingTop="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_999999" />
+            </LinearLayout>
+            <!-- 上传相片 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="上传相片:"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <com.songming.sanitation.frameset.ext.GridViewExt
+                    android:id="@+id/upkeep_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="18dp"
+                    android:gravity="center"
+                    android:listSelector="#00000000"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/upkeep_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/download06"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

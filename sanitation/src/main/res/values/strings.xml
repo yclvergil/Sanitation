@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 第3方开始 -->
+    <integer name="app_version_code">1</integer>
+
+    <string name="app_version">1.0.0</string>
+    <string name="proj_name">ShareSDK_TPL</string>
+    <string name="share_sdk">Share SDK</string>
+    <string name="login_with_msg">用手机号码登录</string>
+    <string name="login_with_weixin">用微信登录</string>
+    <string name="login_with_sina_weibo">用新浪微博登录</string>
+    <string name="login_with_qzone">用QQ空间登录</string>
+    <string name="login_with_other_plat">其他帐号登录</string>
+    <string name="userid_found">用户信息已存在，正在跳转登录操作…</string>
+    <string name="logining">使用%s帐号登录中…</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误，请阅读Logcat输出; \n 如微信登录，需要微信客户端</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
+    <string name="if_register_needed">如果您需要注册功能…</string>
+    <string name="after_auth">一般来说第三方登录时，第三方平台已经为您完成用户身份校验，您可以放心让用户登录。\n\n但如果您需要判断用户是否为新用户，可以在授权操作完成后，将用户的信息通过字段“HashMap userInfo”携带给login方法。客户端通过“String userId”执行登录请求，如果服务端判定此userId为未注册用户，可以将userInfo发送给注册接口，获取用户在此平台上的昵称、头像等数据，然后执行注册</string>
+    <string name="tpl_ok">确定</string>
+    <string name="tpl_cancel">取消</string>
+    <string name="tpl_key_user_icon">头像</string>
+    <string name="tpl_key_user_name">昵称</string>
+    <string name="tpl_key_user_gender">性别</string>
+    <string name="tpl_key_user_note">备注</string>
+    <string name="tpl_value_user_name">昵称</string>
+    <string name="tpl_value_user_gender">性别</string>
+    <string name="tpl_value_user_note">请填写备注信息</string>
+    <string name="tpl_sign_user_info">用户信息</string>
+    <string name="tpl_sign_up">注册</string>
+    <string name="tpl_girl">女</string>
+    <string name="tpl_boy">男</string>
+    <string name="tpl_camera">拍照</string>
+    <string name="tpl_picture">从相册获取</string>
+    <string name="tpl_change_user_name_title">更改名字</string>
+    <string name="tpl_change_user_note_title">更改备注</string>
+    <string name="tpl_input_user_name_hint">好名字可以让你的朋友更容易记住你</string>
+    <string name="tpl_input_user_note_hint">自定义备注信息，给你带来更多吸引</string>
+    <string name="tpl_no_sdcard">sdcard 卡不存在</string>
+    <string name="tpl_msg_login_hint">请输入手机号码</string>
+    <string name="tpl_verify_code_hint">请输验证码</string>
+    <string name="tpl_get_verify_code">获取验证码</string>
+    <string name="tpl_send_verify_code">检验验证码</string>
+    <string name="signup_success">注册成功</string>
+    <string name="signup_failed">注册失败</string>
+    <!-- 第3方结束 -->
+
+    <string name="app_name">环卫365</string>
+    <string name="nowifi">网络连接失败，请检查您的网络设置</string>
+    <string name="nowifitip">没有wifi连接， 只在wifi下更新</string>
+    <string name="menu_settings">Settings</string>
+    <string name="scan_text">将二维码/条码放入框内, 即可自动扫描</string>
+    <string name="scan_title">二维码/条码</string>
+    <string name="scan">扫件</string>
+    <!-- login -->
+    <string name="login_title">登录</string>
+    <string name="register_title">注册</string>
+    <string name="login_username">用户名:</string>
+    <string name="login_username_hint">请输入用户名</string>
+    <string name="login_name_hint">请输入姓名</string>
+    <string name="phone_hint">请输入手机号码</string>
+    <string name="idcard_hint">请输入身份证号码</string>
+    <string name="idcard2_hint">身份证号码不正确</string>
+    <string name="login_psw">密&#160;&#160;&#160;&#160;码:</string>
+    <string name="login_psw_hint">请输入密码</string>
+    <string name="edit_uname_hint">请输入用户名</string>
+    <string name="psw_no_same">两次密码不一致！</string>
+    <string name="login_submit">登录</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="register">注册账号</string>
+    <string name="password_length">请输入大于6位的密码</string>
+
+    <!-- cfg -->
+    <string name="cfg">参数设置</string>
+    <string name="exitapp_title">确定注销[%s],退出应用？</string>
+    <string name="about">关于</string>
+    <string name="lockscreen_time">自动锁屏时间</string>
+    <string name="lockscreen_psw">锁屏密码设置</string>
+    <string name="cachecfg">缓存设置</string>
+    <string name="exitapp">退出登录</string>
+    <string name="netcfg">网络设置</string>
+    <string name="ipaddr">IP地址:</string>
+    <string name="ipaddr_tip">IP地址没有配置</string>
+    <string name="ip">%1$s@%2$s@%3$s@%4$s</string>
+    <string name="port">端&#160;&#160;&#160;&#160;口:</string>
+    <string name="port_tip">端口没有配置</string>
+    <string name="httpurl">http://%1$s:%2$s/api</string>
+    <string name="saveBtn">确定</string>
+    <string name="dot">.</string>
+    <string name="ipvalidError">ip地址不合法，请确认</string>
+    <string name="unlockscreen">解锁</string>
+    <string name="myusername">我的账号</string>
+    <string name="logout">注销</string>
+    <string name="newpassword">新密码:</string>
+    <string name="repeatpassword">重复新密码:</string>
+    <string name="lockscreen_switch">自动锁屏</string>
+    <string name="push_switch">云推送</string>
+
+    <!-- main -->
+    <string name="location">定位</string>
+    <string name="warehouse">仓库管理</string>
+    <string name="undoManger">待办管理</string>
+    <string name="transport">运输管理</string>
+    <string name="remind">待办提醒</string>
+    <string name="customer_app">客户应用</string>
+    <string name="all_type">全部分类</string>
+    <string name="input_orderNo">请输入单号</string>
+    <string name="storage_order">入库订单</string>
+    <string name="out_storage_order">出库订单</string>
+    <string name="additional_order">附件订单</string>
+    <string name="transfer_order">移库订单</string>
+    <string name="title_activity_text">TextActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_knowledge">Knowledge</string>
+    <string name="nodata">无数据</string>
+    <string name="nomessage">未接收到智能鞋信号，请检查设备是否启动</string>
+    <string name="settings_title">设置</string>
+    <string name="sensitivity">灵敏度：</string>
+    <string name="low">低</string>
+    <string name="high">高</string>
+    <string name="sensitivity_info">灵敏度越高,对身体的动作越敏感.请调节灵敏度来适应不同的体形,路面等因素.</string>
+    <string name="step_length">步长:</string>
+    <string name="cm">厘米</string>
+    <string name="setp_length_info_1">为估算行走的距离和速度，请输入步长</string>
+    <string name="setp_length_info_2">(得出的速度和距离较为粗略，仅供参考)</string>
+    <string name="weigth">体重:</string>
+    <string name="kg">公斤</string>
+    <string name="weight_info">为计算消耗的热量(卡路里)，请入体重。</string>
+    <string name="save">保存</string>
+    <string name="cancle">取消</string>
+
+    <!-- 版本更新 -->
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <string name="title_activity_undisposed">Undisposed</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_demo">DEMO</string>
+    
+    <string name="notopen">对不起，您没有此权限</string>
+    <string name="nopower">对不起，您没有此权限</string>
+
+</resources>

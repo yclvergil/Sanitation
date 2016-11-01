@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title_bar_28c3b1" >
+
+        <LinearLayout
+            android:id="@+id/layoutback"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/layoutbackimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:duplicateParentState="true"
+                android:focusable="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/titleback"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/topTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <LinearLayout
+            android:id="@+id/position_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <CheckBox
+                android:id="@+id/position_chechbox"
+                android:layout_width="54dp"
+                android:layout_height="20dp"
+                android:background="@drawable/titlemap_bg_select"
+                android:button="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutright"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/layoutrightimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:duplicateParentState="true"
+                android:focusable="true"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mainuser"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/layoutsearchimg"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:duplicateParentState="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/contactssearch"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

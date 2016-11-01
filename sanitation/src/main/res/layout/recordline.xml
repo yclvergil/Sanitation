@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_lay" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_80000000"
+            android:gravity="center" >
+
+            <TextView
+            android:id="@+id/startrecord"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/recordline01"
+                android:gravity="center"
+                android:text="开始"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+            android:id="@+id/finishrecord"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/recordline02"
+                android:gravity="center"
+                android:text="结束"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

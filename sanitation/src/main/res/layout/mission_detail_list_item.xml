@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="19dp"
+        android:paddingRight="5dp"
+        android:paddingTop="11dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="11dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="左家塘网店"
+                android:textColor="@color/togrey"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/number_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/togrey"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/address_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="长沙友谊路大苏打"
+                android:textColor="@color/togrey"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/phone_image"
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="28dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mission_detail_listitem_ic" />
+
+            <TextView
+                android:id="@+id/phone_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_image"
+                android:layout_marginTop="11dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="15112354654"
+                android:textColor="@color/togrey"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

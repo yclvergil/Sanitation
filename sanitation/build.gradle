@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "25.0.0"
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+
+    defaultConfig {
+        applicationId "com.songming.sanitation"
+        minSdkVersion 10
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':library_calendar')
+    compile project(':library_pullrefresh')
+    /*compile 'com.android.support:support-v4:19.1.0'*/
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/commons-lang-2.5.jar')
+    compile files('libs/gson.jar')
+    compile files('libs/httpmime-4.1.3.jar')
+    compile files('libs/IndoorscapeAlbumPlugin.jar')
+    compile files('libs/locSDK_6.05.jar')
+    compile files('libs/pushservice-5.1.0.48.jar')
+    compile files('libs/universal-image-loader-1.9.4-with-sources.jar')
+    compile files('libs/volley.jar')
+    compile 'com.android.support:support-v4:25.0.0'
+}

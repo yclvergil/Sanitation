@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_383cb810d09639a4eca53ef31dffbc53e7ba2db4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f0e10667a1e48b27e08ce239fe2feeca0eb720aa">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_06e74f00bdc12a7083c484ddb3c0626d1c345eef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="66ec3d823ca086bf32045354f8e821f5f91440a8">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_94b12cfcc96cc936ab51d4d948adeec05c7a71c9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7913e90bd6780bb83a22a8c0b4be5f313c1fd1b3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\libs\commons-lang-2.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b0236b252e86419eef20c31a44579d2aee2f0a69">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\2\commons-lang-2.5_0147ff17e5469e88204c449099d27eb8d93b7ada\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_e7abe547ea7477b2f0dd48e889563b653a9c4004\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_946b853da4cae989e712f99e5172f244cf73a30a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.0_d1ac654197a61163ef3901be0114c3d8ce109889\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\libs\gson.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\2\gson_46122ba0022def6c095b5804e655b7a27c85ca96\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_1fe60482cffdc3c0680a5524576cccc6487e7c4a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_0d7fa86609bd21f0614a14f61d4d8821222bf7c8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.0_09d4a31baa25e4f5f15e391387238e2625777019\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_1d56cf9e8e712231ac5fafc0533649d427c7d6af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\libs\httpmime-4.1.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e70d34d98f7f7f3b2b92105b9f2fe2a7a7184461">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\2\httpmime-4.1.3_7030af69f6bbd153a78cb53efec793c3e6a418b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_c8c59610746b8d3e0f1ad261561f0db2b69e841f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_51e7dd152c38dca4dcd093ce4dcac7c7debf8106\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_ad74d0190bca6421160f6233f0013ff2b3b6630f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_c87e1684d135c03492e02a4465efb963f8779f23\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_ef4bbb62d95c0fdf2447f686300a1b492cc96cb8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.0_1ad16f6de02ff350ab982c467552639a41f1d12b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3080462a96318a303d57cdd6ff837fd5a392ec6c">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_db6423b3877d91211b77b828d0bae2787598293b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\libs\BaiduLBS_Android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="63f54f711401d8de45fc4ff86424b636b48eed3e">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\2\BaiduLBS_Android_cf7b1444ac30b52d1e223d54f1d3f13e0e656934\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_e1769a57fd1714292bb993ddbc85e4b2500f1ca4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_f6c807e0a014192fee71134e6d8a50f23d5edfc2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_339a3b51ac94a4214bf944e338b498e5824caa18\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.0_0ec09146010298777d661ba7c7b3a0e4bb78fe24\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_3ae1d1b500df88dfeeeae59e6b3bf6a768b55ee5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\libs\pushservice-5.1.0.48.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a215d0c403ce2f7e991aabe9875d5e8056db8c71">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\2\pushservice-5.1.0.48_7c81f949cdc2f487d2680fab3ca8622d2b2bf485\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_5a47e4f9cdcb0c68c077cb82579503a19ee88729\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\mulservicetest\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_3aadcadd265c58952314a97d3a806136bd984e0c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_e18ca10cebf0a8fa2c9368efe6691ea217cd16b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.0_a8d9ef9cfd4a2fe6c1daebabcfa22fc7c1ccc596\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\libs\volley.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="593741cd2e1fdf58686dbb9f616f3c3ca9a2fdb0">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\2\volley_89d812042ceacd237a7c27f63ea3620facd0483e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\libs\locSDK_6.05.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="35a869586758500cd28983a23fc6c667784be2d7">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\2\locSDK_6.05_4ca8b1ecf5dd0eb7cad803add8cc6b3185933919\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.0_24c17033c315b790a5b75fe106ac912130db1dcc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="11820c7de1f0812b30c219bff7febbbf62a3c9b9">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_c3416218b2af3510e67bf6c7dc6ef9967750e117\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="E:\Projects\Sanitation\mulservicetest\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_38f71aa6784fe80985d1f70f893bba4472796e26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\libs\universal-image-loader-1.9.4-with-sources.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="40595dbd3e3f1b87b27e914340d0e7dfd2d5b3d3">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\2\universal-image-loader-1.9.4-with-sources_1514d3c04277829d0ca203c5300272adb0d279b8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.0_82726c573323c4dc421f4d967dffa8831c0ff13f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projects\Sanitation\sanitation\libs\IndoorscapeAlbumPlugin.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="11bbb392074775916fb2d41b609d513d81907852">
+        <dex dex="E:\Projects\Sanitation\sanitation\build\intermediates\transforms\dex\debug\folders\1000\2\IndoorscapeAlbumPlugin_ea3f3428f22487b435bdbb2f979170175ff151b2\classes.dex" />
+    </item>
+
+</items>

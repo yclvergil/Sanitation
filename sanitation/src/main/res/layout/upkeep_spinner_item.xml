@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/spinner_item_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_marginLeft="18dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="维修"
+        android:textColor="@drawable/checkup_pop_text"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_cccccc" />
+
+</LinearLayout>

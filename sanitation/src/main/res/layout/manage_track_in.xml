@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_lay" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="李聪头司机轨迹详情"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/title_bar_28c3b1"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/image_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/manage_track_calendar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/manage_track_time"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/manage_track_frame"
+            android:gravity="center_vertical"
+            android:paddingLeft="9dp"
+            android:text="时间:2016-3-20"
+            android:textColor="@color/color_9d9d9d"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/manage_track_beyond"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/manage_track_frame"
+            android:gravity="center_vertical"
+            android:paddingLeft="9dp"
+            android:text="超出轨迹次数：3"
+            android:textColor="@color/color_9d9d9d"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/manage_track_accomplish"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/manage_track_frame"
+            android:gravity="center_vertical"
+            android:paddingLeft="9dp"
+            android:text="清扫规定线路：10条"
+            android:textColor="@color/color_9d9d9d"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/manage_track_state"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/manage_track_frame"
+            android:gravity="center_vertical"
+            android:paddingLeft="9dp"
+            android:text="出发结束地：正常"
+            android:textColor="@color/color_9d9d9d"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

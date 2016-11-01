@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Sanitation.iml" filepath="$PROJECT_DIR$/Sanitation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_calendar/library_calendar.iml" filepath="$PROJECT_DIR$/library_calendar/library_calendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_pullrefresh/library_pullrefresh.iml" filepath="$PROJECT_DIR$/library_pullrefresh/library_pullrefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mulservicetest/mulservicetest.iml" filepath="$PROJECT_DIR$/mulservicetest/mulservicetest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sanitation/sanitation.iml" filepath="$PROJECT_DIR$/sanitation/sanitation.iml" />
+    </modules>
+  </component>
+</project>

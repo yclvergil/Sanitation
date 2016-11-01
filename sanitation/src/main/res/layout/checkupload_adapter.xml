@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="15dp"
+    android:paddingTop="28dp" >
+
+    <TextView
+        android:id="@+id/checkdate"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="06-02"
+        android:textColor="@color/color_333333"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="67dp"
+            android:layout_height="62dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/insideadapter2" />
+
+        <com.songming.sanitation.frameset.ext.ListViewExt
+            android:id="@+id/insidelistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#00000000"
+            android:dividerHeight="40dp"
+            android:listSelector="#00000000"
+            android:scrollbars="none" >
+        </com.songming.sanitation.frameset.ext.ListViewExt>
+    </LinearLayout>
+
+</LinearLayout>

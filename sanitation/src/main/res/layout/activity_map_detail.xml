@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_lay" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/location_current_ic"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/jgg_image"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="18dp" >
+
+            <ImageView
+                android:id="@+id/message_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/map_detail_bg_select1" />
+
+            <ImageView
+                android:id="@+id/message_new_image"
+                android:layout_width="22dp"
+                android:layout_height="24dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/map_newms_ic"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/jgg_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/route_image"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/map_detail_bg_select2" />
+
+        <ImageView
+            android:id="@+id/route_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="13dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/map_detail_bg_select3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/mission_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/map_fragment_select0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/complete_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="已完成"
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/complete_num_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+
+                    <ImageView
+                        android:id="@+id/complete_imageview"
+                        android:layout_width="19dp"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="8dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/location_dropdown_ic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/no_mission_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/map_fragment_select0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/nocomplete_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="未完成"
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/nocomplete_num_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="19sp" />
+
+                    <ImageView
+                        android:id="@+id/nocomplete_imageview"
+                        android:layout_width="19dp"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="8dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/location_dropdown_ic" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ListView
+                    android:id="@+id/mylist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

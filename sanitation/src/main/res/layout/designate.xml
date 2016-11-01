@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_9c9ca8"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_lay" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/designate_frame"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/designate_appoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            android:text="工单指派"
+            android:textColor="@color/color_333333"
+            android:textSize="18sp" />
+
+        <GridView
+            android:id="@+id/personnel"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="21dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:listSelector="@color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="21dp" >
+        </GridView>
+
+        
+           <EditText
+            android:id="@+id/designate_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner5_bg"
+            android:padding="5dp"
+            android:lines="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            android:hint="请输入工作描述"
+            android:textColor="@color/color_333333"
+            android:textSize="18sp" />
+           
+           
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="19dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/designate_confirm"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="9"
+                android:background="@drawable/undisposed_accept"
+                android:text="确定指派"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/designate_cancel"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="9"
+                android:background="@drawable/designate_cancel"
+                android:text="取消"
+                android:textColor="@color/color_7d7f87"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

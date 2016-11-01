@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_00000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" >
+
+        <ImageView
+            android:id="@+id/designate_ic"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/designate_ic" />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/designate_item_confirm"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignRight="@+id/designate_ic"
+            android:src="@drawable/designate_confirm"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/designate_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="李南飞"
+        android:textColor="@color/color_808080"
+        android:textSize="14sp" />
+
+</LinearLayout>
