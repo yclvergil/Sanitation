@@ -213,5 +213,10 @@ public class Constants {
 	/** 百度推送APIKEY */
 	public static final String PUSH_LOGIN_TYPE_API_KEY = "3jviNaEwIcGplO3CRE5GuC85";
 
+	/**
+	 * 定位标记
+	 */
+	public final static String SIGNFLAG = "signflag";
+
 	
 }

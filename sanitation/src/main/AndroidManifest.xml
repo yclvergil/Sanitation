@@ -3,7 +3,7 @@
     package="com.songming.sanitation"
     android:installLocation="preferExternal"
     android:versionCode="16"
-    android:versionName="1.0.16" >
+    android:versionName="1.0.16">
 
     <uses-sdk
         android:minSdkVersion="10"
@@ -23,8 +23,7 @@
 
     <permission
         android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.songming.sanitation"
-        android:protectionLevel="normal" >
-    </permission>
+        android:protectionLevel="normal"></permission>
 
     <!-- 访问网络，网络定位需要上网 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -55,11 +54,11 @@
         android:allowBackup="true"
         android:icon="@drawable/app_logo"
         android:label="@string/app_name"
-        android:persistent="true" >
+        android:persistent="true">
         <activity
             android:name=".SplashActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -355,7 +354,7 @@
             android:name="com.songming.sanitation.workdeal.ArrangeWorkActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" />
-  		<activity
+        <activity
             android:name="com.songming.sanitation.workdeal.ReceivedClientMsgDetailsActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" />
@@ -363,7 +362,7 @@
         <service
             android:name=".map.service.MyLocationService"
             android:enabled="true"
-            android:priority="1000" >
+            android:priority="1000">
             <intent-filter>
                 <action android:name="com.songming.sanitation.map.service.MyLocationService" />
             </intent-filter>
@@ -371,18 +370,34 @@
         <service
             android:name="com.songming.sanitation.sign.PersonalLocationService"
             android:enabled="true"
-            android:priority="1000" >
+            android:priority="1000">
             <intent-filter>
                 <action android:name="com.songming.sanitation.sign.PersonalLocationService" />
             </intent-filter>
         </service>
+        <!--内部保活Service-->
+        <service android:name="com.songming.sanitation.sign.PersonalLocationService$GrayInnerService" />
+        <!--内部保活BroadCostReceiver-->
+        <receiver android:name="com.songming.sanitation.sign.ProtectServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+                <!-- 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
 
         <!-- 百度地图秘钥 -->
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="IpS7LoAoG44XWpi1MjGjaVHqphC70UzY" />
 
-       
+
         <!-- 百度地图秘钥lw -->
         <!-- <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
@@ -400,17 +415,15 @@
         <activity
             android:name="com.baidu.android.pushservice.richmedia.MediaViewActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:label="MediaViewActivity" >
-        </activity>
+            android:label="MediaViewActivity" />
         <activity
             android:name="com.baidu.android.pushservice.richmedia.MediaListActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="MediaListActivity"
-            android:launchMode="singleTask" >
-        </activity>
+            android:launchMode="singleTask" />
 
         <!-- push应用定义消息receiver声明 -->
-        <receiver android:name=".pushservice.MyPushMessageReceiver" >
+        <receiver android:name=".pushservice.MyPushMessageReceiver">
             <intent-filter>
 
                 <!-- 接收push消息 -->
@@ -424,7 +437,7 @@
         <!-- push必须的receviver和service声明 -->
         <receiver
             android:name="com.baidu.android.pushservice.PushServiceReceiver"
-            android:process=":bdservice_v1" >
+            android:process=":bdservice_v1">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
@@ -439,7 +452,7 @@
         </receiver>
         <receiver
             android:name="com.baidu.android.pushservice.RegistrationReceiver"
-            android:process=":bdservice_v1" >
+            android:process=":bdservice_v1">
             <intent-filter>
                 <action android:name="com.baidu.android.pushservice.action.METHOD" />
                 <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
@@ -451,13 +464,15 @@
             </intent-filter>
         </receiver>
         <!-- 在Application标签中声明SERVICE组件,每个APP拥有自己单独的定位SERVICE-->
-        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
-        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
 
         <service
             android:name="com.baidu.android.pushservice.PushService"
             android:exported="true"
-            android:process=":bdservice_v1" >
+            android:process=":bdservice_v1">
             <intent-filter>
                 <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
             </intent-filter>

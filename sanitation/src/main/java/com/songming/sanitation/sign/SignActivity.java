@@ -381,6 +381,8 @@ public class SignActivity extends BaseActivity implements OnClickListener {
 					}
 					// 开启定位服务
 					startPositionService();
+					//定位开启标记
+					SharedPreferencesUtils.setBooleanValue(this, Constants.SIGNFLAG, true);
 
 				} else if (index == 2) {
 					btnFlag = 2;
@@ -395,6 +397,8 @@ public class SignActivity extends BaseActivity implements OnClickListener {
 						// android5.0以上必须加上以下一行代码，显示指出
 						intent.setPackage(getPackageName());
 						stopService(intent);
+						//结束定位标记
+						SharedPreferencesUtils.setBooleanValue(this, Constants.SIGNFLAG, false);
 					}
 
 					// 上传员工坐标
