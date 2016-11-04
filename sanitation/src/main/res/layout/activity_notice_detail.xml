@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_lay" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/msgtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="异常轨迹提醒"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/msgdate"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/msgtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-04-19 8:00"
+            android:textColor="@color/color_808080"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/msgctx"
+            android:layout_below="@id/msgdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="您的轨迹有所偏移，请在正确的轨迹上作业"
+            android:textColor="@color/title_bar_28c3b1"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/msgtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="8:00"
+            android:textColor="@color/color_808080"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

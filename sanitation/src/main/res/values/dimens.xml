@@ -23,6 +23,6 @@
     <dimen name="text_size_5">16.0sp</dimen>
     <dimen name="radio_group_height">35dp</dimen>
     <dimen name="textSize_33px">21sp</dimen>
-	<dimen name="dimen_margin_circle">4dp</dimen>
+    <dimen name="dimen_margin_circle">4dp</dimen>
     <dimen name="dimen_margin_circle.negative">-4dp</dimen>
 </resources>

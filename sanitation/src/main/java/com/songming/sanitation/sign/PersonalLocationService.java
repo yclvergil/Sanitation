@@ -63,8 +63,8 @@ public class PersonalLocationService extends Service {
     private long createId;
     private int orgId;
 
-    private static final long MIN_10 = 1 * 30 * 1000;//10分钟
-    private static final long MIN_1 = 1 * 30 * 1000;//1分钟
+    private static final long MIN_10 = 10 * 60 * 1000;//10分钟
+    private static final long MIN_1 = 1 * 60 * 1000;//1分钟
     private AlarmManager manager;
     private AlarmReceiver receiver;
 
@@ -77,6 +77,7 @@ public class PersonalLocationService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
+        manager = (AlarmManager) getSystemService(ALARM_SERVICE);
         //注册广播
         receiver = new AlarmReceiver();
         IntentFilter intentFilter = new IntentFilter(AlarmReceiver.class.getSimpleName());
@@ -93,41 +94,45 @@ public class PersonalLocationService extends Service {
             startForeground(GRAY_SERVICE_ID, new Notification());
         }
         int type = MYLOCATIONSERVICE_START;
+        boolean flag = SharedPreferencesUtils.getBooleanValue(this.getApplicationContext(), Constants.SIGNFLAG, false);
         if (intent != null) {
             type = intent.getIntExtra(MYLOCATIONSERVICE_TYPE,
                     MYLOCATIONSERVICE_START);
         }
-        switch (type) {
-            // 开始
-            case MYLOCATIONSERVICE_START:
+        Log.d("PersonalLocationService", "flag:" + flag);
 
-                BdMapLocationUtils.getInstance().stopLocation();
-                createId = SharedPreferencesUtils.getLongValue(
-                        getApplicationContext(),
-                        SharedPreferencesUtils.STAFF_ID, -1);
-                orgId = SharedPreferencesUtils.getIntValue(
-                        getApplicationContext(), SharedPreferencesUtils.ORG_ID,
-                        -1);
-                Log.d("aa", "service--" + createId + "~~" + orgId);
-                BdMapLocationUtils.getInstance().startLocation(
-                        new BdLocationSuccessListenner() {
-                            @Override
-                            public void locationResult(double _latitude,
-                                                       double _longitude, String _city,
-                                                       String _locationAddr, String _locationType) {
-                                latitude = _latitude;
-                                longitude = _longitude;
-                                execute();
-                            }
-                        });
-                boolean hasNet = WifiNetUtils
-                        .isNetworkConnected(getApplicationContext());
-                Log.d("aa", "hasNet ? " + hasNet);
-                if (!hasNet) {
-                    runAlarm(MIN_1);
-                } else {
-                    runAlarm(MIN_1);
-                }
+
+        boolean hasNet = false;
+        //上班时段才上传
+        if (flag) {
+            BdMapLocationUtils.getInstance().stopLocation();
+            createId = SharedPreferencesUtils.getLongValue(
+                    getApplicationContext(),
+                    SharedPreferencesUtils.STAFF_ID, -1);
+            orgId = SharedPreferencesUtils.getIntValue(
+                    getApplicationContext(), SharedPreferencesUtils.ORG_ID,
+                    -1);
+            Log.d("aa", "service--" + createId + "~~" + orgId);
+            BdMapLocationUtils.getInstance().startLocation(
+                    new BdLocationSuccessListenner() {
+                        @Override
+                        public void locationResult(double _latitude,
+                                                   double _longitude, String _city,
+                                                   String _locationAddr, String _locationType) {
+                            latitude = _latitude;
+                            longitude = _longitude;
+                            execute();
+                        }
+                    });
+            hasNet = WifiNetUtils
+                    .isNetworkConnected(getApplicationContext());
+
+            if (!hasNet) {
+                runAlarm(MIN_1);
+            } else {
+                runAlarm(MIN_10);
+            }
+        }
                 /*if (isApplicationBroughtToBackground()) {
                     Intent i = new Intent();
 					intent.setAction(Intent.ACTION_MAIN);
@@ -136,10 +141,7 @@ public class PersonalLocationService extends Service {
 							| Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
 					startActivity(intent);
 				}*/
-                break;
-            default:
-                break;
-        }
+
 
         return START_STICKY;
     }
@@ -163,9 +165,9 @@ public class PersonalLocationService extends Service {
                     jsonObject.put("longitude", longitude);
                     jsonObject.put("latitude", latitude);
 
-					/*String dataPost = HttpRequestTool.sendPost(
+                    String dataPost = HttpRequestTool.sendPost(
                             Constants.SERVER_URL + Constants.STAFFLOCATION,
-							"param=" + jsonObject.toString());*/
+                            "param=" + jsonObject.toString());
                     Log.d("PersonalLocationService", "经纬度：" + longitude + "::::" + latitude);
 //					Log.i("aa", "execute~~~: " + dataPost);
                 } catch (JSONException e) {
@@ -181,7 +183,9 @@ public class PersonalLocationService extends Service {
      * Alarm定时器
      */
     private void runAlarm(long delay) {
-        manager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        if (manager == null) {
+            manager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        }
         long triggerAtTime = SystemClock.elapsedRealtime() + delay;
         Intent intent = new Intent(AlarmReceiver.class.getSimpleName());
         PendingIntent pi = PendingIntent.getBroadcast(this, 0, intent, 0);

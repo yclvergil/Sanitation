@@ -68,7 +68,7 @@ public class CheckUploadAcitivity extends BaseActivity implements
 	protected void onResume() {
 		super.onResume();
 		mCurIndex = 1;
-		requestData();
+		//requestData();
 	}
 
 	@Override

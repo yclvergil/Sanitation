@@ -7,10 +7,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -31,6 +33,7 @@ import com.songming.sanitation.frameset.utils.RefreshUtils;
 import com.songming.sanitation.frameset.utils.SharedPreferencesUtils;
 import com.songming.sanitation.user.adapter.SystemMsgAdapter;
 import com.songming.sanitation.user.model.PushMessageDto;
+import com.songming.sanitation.workdeal.NoticeDetailActivity;
 
 /**
  * 消息列表
@@ -83,6 +86,14 @@ public class SystemMsgAcitivity extends BaseActivity implements OnClickListener 
 		mListView = prlistview.getRefreshableView();
 		adapter = new SystemMsgAdapter(this, list);
 		mListView.setAdapter(adapter);
+		mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				Intent intent = new Intent(SystemMsgAcitivity.this, NoticeDetailActivity.class);
+				intent.putExtra("MSG", list.get(position-1));
+				startActivity(intent);
+			}
+		});
 
 		prlistview.setOnRefreshListener(new OnRefreshListener2() {
 

@@ -177,6 +177,7 @@ public abstract class BaseActivity extends FragmentActivity implements
 
 		JsonObjectReuestExt request = new JsonObjectReuestExt(url + methodName,
 				jsonObject, this, this, map);
+		Log.d("TestBaseActivity", url + methodName+"--------"+jsonObject.toString());
 
 		// 设置请求时间,重连次数
 		request.setRetryPolicy(new DefaultRetryPolicy(15000, 1, 1.0f));

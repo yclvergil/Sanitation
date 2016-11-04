@@ -142,7 +142,7 @@
     <string name="title_activity_undisposed">Undisposed</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_demo">DEMO</string>
-    
+
     <string name="notopen">对不起，您没有此权限</string>
     <string name="nopower">对不起，您没有此权限</string>
 

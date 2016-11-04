@@ -37,7 +37,7 @@ public class ProtectServiceReceiver extends BroadcastReceiver {
     private boolean isMyServiceRunning(Class<?> serviceClass) {
         ActivityManager manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
         for (ActivityManager.RunningServiceInfo service : manager
-                .getRunningServices(Integer.MAX_VALUE)) {
+                .getRunningServices(100)) {
             if (serviceClass.getName().equals(service.service.getClassName())) {
                 return true;
             }

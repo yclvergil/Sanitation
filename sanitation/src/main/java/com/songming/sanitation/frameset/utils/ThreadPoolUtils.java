@@ -17,11 +17,11 @@ public class ThreadPoolUtils {
     //线程池核心线程数
     private static int CORE_POOL_SIZE = 5;
     //线程池最大线程数
-    private static int MAX_POOL_SIZE = 20;
+    private static int MAX_POOL_SIZE = 10;
     //额外线程空状态生存时间
     private static int KEEP_ALIVE_TIME = 10000;
     //阻塞队列。当核心线程都被占用，且阻塞队列已满的情况下，才会开启额外线程。
-    private static BlockingQueue workQueue = new ArrayBlockingQueue(5);
+    private static BlockingQueue workQueue = new ArrayBlockingQueue(3);
     //线程池
     private static ThreadPoolExecutor threadPool;
 

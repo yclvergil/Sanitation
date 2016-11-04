@@ -209,8 +209,10 @@ public class DesignateActivity extends BaseActivity implements OnClickListener {
 				// 汇报上级
 				jsonObject.put("orgId", orgId);
 				this.showLoading("正在查询人员……", "jobcontacts");
-				requestHttp(jsonObject, "jobcontacts", Constants.JOB_CONTACTS,
-						Constants.SERVER_URL);
+				/*requestHttp(jsonObject, "jobcontacts", Constants.JOB_CONTACTS,
+						Constants.SERVER_URL);*/
+				requestHttp(jsonObject, "jobcontacts",
+						Constants.STAFF_COMMENT, Constants.SERVER_URL);
 			}
 
 		} catch (JSONException e) {
@@ -453,6 +455,13 @@ public class DesignateActivity extends BaseActivity implements OnClickListener {
 				Toast.makeText(DesignateActivity.this, "当前无法汇报上级！",
 						Toast.LENGTH_SHORT).show();
 			}
+			/*for (UserDto user : list) {
+				long stationid = SharedPreferencesUtils.getLongValue(this, SharedPreferencesUtils.STATIONID, 1000);
+				Log.d("DesignateActivity", user.getStationId() + "~~~~~~" + stationid);
+				if (user.getStationId() >= stationid) {
+					list.remove(user);
+				}
+			}*/
 			adapter.setData(list);
 			mGridView.setAdapter(adapter);
 		}
