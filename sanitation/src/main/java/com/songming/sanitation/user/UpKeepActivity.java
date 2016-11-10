@@ -421,7 +421,7 @@ public class UpKeepActivity extends BaseActivity implements OnClickListener {
 
 	/**
 	 * 保存图片
-	 * 
+	 *
 	 * @param bm
 	 * @param fileName
 	 * @param fileUrl

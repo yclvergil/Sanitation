@@ -209,10 +209,10 @@ public class DesignateActivity extends BaseActivity implements OnClickListener {
 				// 汇报上级
 				jsonObject.put("orgId", orgId);
 				this.showLoading("正在查询人员……", "jobcontacts");
-				/*requestHttp(jsonObject, "jobcontacts", Constants.JOB_CONTACTS,
-						Constants.SERVER_URL);*/
-				requestHttp(jsonObject, "jobcontacts",
-						Constants.STAFF_COMMENT, Constants.SERVER_URL);
+				requestHttp(jsonObject, "jobcontacts", Constants.JOB_CONTACTS,
+						Constants.SERVER_URL);
+				/*requestHttp(jsonObject, "jobcontacts",
+						Constants.STAFF_COMMENT, Constants.SERVER_URL);*/
 			}
 
 		} catch (JSONException e) {

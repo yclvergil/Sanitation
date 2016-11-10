@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.songming.sanitation"
     android:installLocation="preferExternal"
-    android:versionCode="16"
-    android:versionName="1.0.16">
+    android:versionCode="17"
+    android:versionName="1.0.17">
 
     <uses-sdk
         android:minSdkVersion="10"
@@ -15,7 +15,6 @@
     <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
 
     <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名 -->
@@ -398,11 +397,6 @@
             </intent-filter>
         </receiver>
 
-        <!-- 百度地图秘钥 -->
-        <meta-data
-            android:name="com.baidu.lbsapi.API_KEY"
-            android:value="IpS7LoAoG44XWpi1MjGjaVHqphC70UzY" />
-
         <!-- 百度地图秘钥lw -->
         <!--
              <meta-data
@@ -471,11 +465,7 @@
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
-        <!-- 在Application标签中声明SERVICE组件,每个APP拥有自己单独的定位SERVICE -->
-        <service
-            android:name="com.baidu.location.f"
-            android:enabled="true"
-            android:process=":remote" />
+
         <service
             android:name="com.baidu.android.pushservice.PushService"
             android:exported="true"
@@ -492,7 +482,21 @@
             android:name="com.baidu.android.pushservice.PushInfoProvider"
             android:authorities="com.songming.sanitation.bdpush"
             android:exported="true"
+            android:protectionLevel="signature"
             android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.songming.sanitation" />
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="3jviNaEwIcGplO3CRE5GuC85" />
+        <!-- 在Application标签中声明SERVICE组件,每个APP拥有自己单独的定位SERVICE -->
+        <!-- 百度地图秘钥 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="IpS7LoAoG44XWpi1MjGjaVHqphC70UzY" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
 
     </application>
 

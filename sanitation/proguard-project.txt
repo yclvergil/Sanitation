@@ -16,7 +16,7 @@
 -keep public class com.android.vending.licensing.ILicensingService
 
 
--libraryjars libs/android-support-v4.jar
+#-libraryjars libs/android-support-v4.jar
 -keep public class * extends android.support.v4.**
 -keep class android.support.v4.** { *; }  
 -dontwarn android.support.v4.** 
@@ -69,15 +69,15 @@
  
  
   
--libraryjars  libs/gson.jar
--libraryjars  libs/BaiduLBS_Android.jar
--libraryjars  libs/httpmime-4.1.3.jar
--libraryjars  libs/IndoorscapeAlbumPlugin.jar
--libraryjars  libs/locSDK_6.05.jar
--libraryjars  libs/universal-image-loader-1.9.4-with-sources.jar
--libraryjars  libs/volley.jar
+#-libraryjars  libs/gson.jar
+#-libraryjars  libs/BaiduLBS_Android.jar
+#-libraryjars  libs/httpmime-4.1.3.jar
+#-libraryjars  libs/IndoorscapeAlbumPlugin.jar
+#-libraryjars  libs/locSDK_6.05.jar
+#-libraryjars  libs/universal-image-loader-1.9.4-with-sources.jar
+#-libraryjars  libs/volley.jar
 # 10/31 by ycl
--libraryjars  libs/pushservice-5.1.0.48.jar
+#-libraryjars  libs/pushservice-5.1.0.48.jar
 
    
 -keep class com.google.gson.** { *; } 
