@@ -12,7 +12,7 @@
         android:background="@drawable/user_layout_selector"
         android:orientation="horizontal" >
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -32,6 +32,7 @@
 
             <TextView
                 android:id="@+id/site"
+                android:layout_below="@id/headline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="13dp"
@@ -42,7 +43,17 @@
                 android:text="处理桐梓破西路交通事故现场清理"
                 android:textColor="@color/color_999999"
                 android:textSize="13sp" />
-        </LinearLayout>
+            <TextView
+                android:id="@+id/tv_now_date"
+                android:text="今天"
+                android:textColor="@color/red3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
 
         <ImageView
             android:layout_width="10dp"

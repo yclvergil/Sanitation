@@ -223,7 +223,7 @@ public class PersonalLocationService extends Service {
     }
 
     @Override
-    public void onDestroy() {
+    public void onDestroy()  {
         //发送启动服务广播
         this.sendBroadcast(new Intent(AlarmReceiver.class.getSimpleName()));
         unregisterReceiver(receiver);

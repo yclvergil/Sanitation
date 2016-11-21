@@ -140,7 +140,7 @@ public class UndisposedActivity extends BaseActivity implements OnClickListener 
 			}
 
 		} else {
-			topTitle.setText("工单详情");
+			topTitle.setText("事件处理");
 		}
 
 		layoutback.setVisibility(View.VISIBLE);

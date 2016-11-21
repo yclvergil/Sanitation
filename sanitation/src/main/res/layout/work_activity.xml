@@ -63,39 +63,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/incident"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/user_layout_selector"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal" >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:text="突发事件"
-                        android:textColor="@color/togrey"
-                        android:textSize="17sp" />
-
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:paddingBottom="0dp" />
-
-                    <ImageView
-                        android:layout_width="10dp"
-                        android:layout_height="19dp"
-                        android:layout_marginRight="7dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/center_right_ic" />
-                </LinearLayout>
-
-                <LinearLayout
                     android:id="@+id/patrol"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -191,7 +158,38 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/center_right_ic" />
                 </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/incident"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/user_layout_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="突发事件"
+                        android:textColor="@color/togrey"
+                        android:textSize="17sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="0dp" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="19dp"
+                        android:layout_marginRight="7dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/center_right_ic" />
+                </LinearLayout>
                 <LinearLayout
                     android:id="@+id/driver"
                     android:layout_width="match_parent"

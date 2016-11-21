@@ -7,6 +7,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -32,12 +33,14 @@ import com.songming.sanitation.frameset.utils.UpdateManager;
 import com.songming.sanitation.frameset.widget.ImageCarousel;
 import com.songming.sanitation.manage.ManageActivity;
 import com.songming.sanitation.manage.bean.VersionDTO;
+import com.songming.sanitation.pushservice.MiPushMessageReceiver;
 import com.songming.sanitation.sign.SignActivity;
 import com.songming.sanitation.user.AboutActivity;
 import com.songming.sanitation.user.LoginAcitivity;
 import com.songming.sanitation.user.UserCenterAcitivity;
 import com.songming.sanitation.workdeal.WorkActivity;
 import com.songming.sanitation.workdeal.WorkDealActivity;
+import com.xiaomi.mipush.sdk.MiPushClient;
 
 /**
  * 主页面
@@ -76,6 +79,8 @@ public class Main extends BaseActivity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("Main", applications.channelId);
+        MiPushClient.setAlias(Main.this, applications.channelId, null);
 
         fromNotification = getIntent().getBooleanExtra("fromNotification",
                 false);

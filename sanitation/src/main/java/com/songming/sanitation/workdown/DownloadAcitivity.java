@@ -5,7 +5,9 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URLEncoder;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -62,7 +64,7 @@ public class DownloadAcitivity extends BaseActivity implements OnClickListener,
     private TextView topTitle;
     private ImageView layoutbackimg;
 
-    private EditText address;// 地址
+    private String address;// 地址
     private EditText phone;// 电话
     private EditText detail;// 事件描述
     private ImageView clearphone;// 清除电话按钮
@@ -86,6 +88,9 @@ public class DownloadAcitivity extends BaseActivity implements OnClickListener,
     private static final String TAG = "DownloadAcitivity";
 
     private Long stationId;// 职权id
+    private EditText name;
+    private EditText time;
+    private ImageView voice;
 
     @Override
     protected void onCreate(Bundle arg0) {
@@ -139,9 +144,11 @@ public class DownloadAcitivity extends BaseActivity implements OnClickListener,
         topTitle = (TextView) findViewById(R.id.topTitle);
         layoutbackimg = (ImageView) findViewById(R.id.layoutbackimg);
 
-        address = (EditText) findViewById(R.id.address);
+        name = (EditText) findViewById(R.id.et_post_name);
+        time = (EditText) findViewById(R.id.et_post_time);
         phone = (EditText) findViewById(R.id.phone);
         detail = (EditText) findViewById(R.id.detail);
+        voice = (ImageView) findViewById(R.id.img_voice);
         clearphone = (ImageView) findViewById(R.id.clearphone);
         photo = (ImageView) findViewById(R.id.photo);
         gv = (GridViewExt) findViewById(R.id.gridview);
@@ -160,6 +167,7 @@ public class DownloadAcitivity extends BaseActivity implements OnClickListener,
         photo.setOnClickListener(this);
         commit.setOnClickListener(this);
         phone.addTextChangedListener(this);
+        voice.setOnClickListener(this);
         adapter = new DownloadAdapter(DownloadAcitivity.this, picture, handler);
 
         // 为GridView设置适配器
@@ -173,16 +181,21 @@ public class DownloadAcitivity extends BaseActivity implements OnClickListener,
                                                double _longitude, String _city,
                                                String _locationAddr, String _locationType) {
                         // TODO Auto-generated method stub
-                        address.setText(_locationAddr);
+                        address = _locationAddr;
                     }
                 });
 
         String userphone = SharedPreferencesUtils.getStringValue(this,
                 SharedPreferencesUtils.PHONE, "");
+        String username = SharedPreferencesUtils.getStringValue(this,
+                SharedPreferencesUtils.USERNAME, "");
 
         stationId = SharedPreferencesUtils.getLongValue(this,
                 SharedPreferencesUtils.STATIONID, -1);
-
+        name.setText(username);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String nowTime = sdf.format(new Date());
+        time.setText(nowTime);
         phone.setText(userphone);
 
     }
@@ -221,7 +234,7 @@ public class DownloadAcitivity extends BaseActivity implements OnClickListener,
                 Toast.makeText(this, "上传成功！", Toast.LENGTH_SHORT).show();
 
                 if (stationId == 1 || stationId == 4 || stationId == 6) {
-                    startActivity(new Intent(this, WorkDealActivity.class));
+                    startActivity(new Intent(this, IncidentListActivity.class));
                 }
                 this.finish();
 
@@ -396,7 +409,7 @@ public class DownloadAcitivity extends BaseActivity implements OnClickListener,
                 Log.d(TAG, "flag:" + flag);
 
                     // 提交
-                    addr = address.getText().toString().trim();
+                    addr = address.trim();
                 if (StringUtilsExt.isEmpty(addr)) {
                     Toast.makeText(this, "请填写事件地址！", Toast.LENGTH_SHORT).show();
                     return;

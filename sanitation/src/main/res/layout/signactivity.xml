@@ -49,7 +49,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="56dp"
                 android:gravity="center_vertical|center_horizontal"
-                android:text="员工签到"
+                android:text="下属员工"
                 android:textColor="@color/color_333333"
                 android:textSize="19sp" />
 

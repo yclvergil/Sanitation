@@ -14,6 +14,7 @@ import com.android.volley.VolleyError;
 import com.songming.sanitation.R;
 import com.songming.sanitation.frameset.BaseActivity;
 import com.songming.sanitation.manage.FunctionDescActivity;
+import com.songming.sanitation.user.SystemMsgAcitivity;
 
 /**
  * 事件 工作页面
@@ -97,7 +98,8 @@ public class WorkActivity extends BaseActivity implements OnClickListener {
 		switch (v.getId()) {
 		case R.id.announcement:
 			// 公告通知
-			startActivity(new Intent(this, NoticeActivity.class));
+			// 接收的，系统信息
+			startActivity(new Intent(this, SystemMsgAcitivity.class));
 
 			// startActivity(new Intent(this, DownloadAcitivity.class));
 

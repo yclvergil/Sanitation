@@ -101,6 +101,15 @@
             android:scaleType="fitCenter"
             android:src="@drawable/contactssearch"
             android:visibility="gone" />
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/img_sign_category"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/category_sign"
+            android:layout_alignParentRight="true"/>
     </RelativeLayout>
 
 </LinearLayout>

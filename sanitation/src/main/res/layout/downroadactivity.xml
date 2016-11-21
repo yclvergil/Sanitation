@@ -45,7 +45,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="事件地址："
+                        android:text="上报人："
                         android:textColor="@color/color_333333"
                         android:textSize="15sp" />
                 </LinearLayout>
@@ -61,7 +61,63 @@
                     android:orientation="horizontal" >
 
                     <EditText
-                        android:id="@+id/address"
+                        android:id="@+id/et_post_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/download09"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/color_333333"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/download07"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/download05" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上报时间："
+                        android:textColor="@color/color_333333"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_post_time"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:background="@drawable/download09"
@@ -195,7 +251,14 @@
                         android:paddingTop="14dp"
                         android:textColor="@color/color_333333"
                         android:textSize="13sp" />
-
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/img_voice"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="13dp"
+                        android:background="@drawable/chatto_voice_playing"
+                        android:scaleType="centerInside" />
                     <ImageView
                         android:id="@+id/photo"
                         android:layout_width="58dp"
@@ -235,5 +298,7 @@
                 android:textSize="18dp" />
         </LinearLayout>
     </ScrollView>
+
+    <include layout="@layout/title_bar_lay" />
 
 </LinearLayout>

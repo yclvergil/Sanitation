@@ -54,6 +54,8 @@ import com.songming.sanitation.frameset.utils.ImageUtil;
 import com.songming.sanitation.manage.bean.StaffDto;
 import com.songming.sanitation.map.tool.BdMapLocationUtils;
 import com.songming.sanitation.map.tool.BdMapLocationUtils.BdLocationSuccessListenner;
+import com.songming.sanitation.sign.db.DBUtils;
+import com.songming.sanitation.sign.db.SignBean;
 
 /**
  * 签到界面
@@ -94,6 +96,9 @@ public class StaffSignActivity extends BaseActivity implements OnClickListener {
 	private static final int UPLOAD_FAIL = 444;
 	private StaffDto bean;
 	private int btnFlag = 0;
+	private String curTime;
+	private String date;
+	private String city;
 
 	@Override
 	protected void onCreate(Bundle arg0) {
@@ -160,10 +165,10 @@ public class StaffSignActivity extends BaseActivity implements OnClickListener {
 
 		sname.setText(bean.getName());
 		sday.setText(getWeek());
-		String date = new SimpleDateFormat("yyyy.MM.dd").format(new Date());
+		date = new SimpleDateFormat("yyyy.MM.dd").format(new Date());
 		sdate.setText(date);
 		sduration.setText("08:30:05");
-		String curTime = new SimpleDateFormat("HH:mm").format(new Date());
+		curTime = new SimpleDateFormat("HH:mm").format(new Date());
 		stime.setText(curTime);
 
 		signin.setOnClickListener(this);
@@ -188,6 +193,7 @@ public class StaffSignActivity extends BaseActivity implements OnClickListener {
 							double _longitude, String _city,
 							String _locationAddr, String _locationType) {
 						llE = new LatLng(_latitude, _longitude);
+						city = _locationAddr;
 						splacename.setText(_city);
 						splaceroad.setText(_locationAddr);
 
@@ -208,7 +214,8 @@ public class StaffSignActivity extends BaseActivity implements OnClickListener {
 						mBaiduMap.animateMapStatus(u);
 
 						if (index > 0) {
-							showDialog();
+							//showDialog();
+							takePhoto();
 						}
 
 					}
@@ -278,6 +285,7 @@ public class StaffSignActivity extends BaseActivity implements OnClickListener {
 				if (index == 1) {
 					btnFlag = 1;
 					Toast.makeText(this, "签到成功!", Toast.LENGTH_SHORT).show();
+					save2DB();
 					signin.setImageResource(R.drawable.sign06);
 					signout.setImageResource(R.drawable.sign07);
 
@@ -355,17 +363,28 @@ public class StaffSignActivity extends BaseActivity implements OnClickListener {
 
 			@Override
 			public void onClick(View arg0) {
-				Intent intentFromCapture = new Intent(
-						MediaStore.ACTION_IMAGE_CAPTURE);
-				intentFromCapture.putExtra(MediaStore.EXTRA_OUTPUT,
-						Uri.fromFile(tempFile));
-				startActivityForResult(intentFromCapture, 102);
+				takePhoto();
 				dialog.dismiss();
 			}
 		});
 		dialog.setCanceledOnTouchOutside(false);
 		dialog.show();
 
+	}
+
+	private void takePhoto() {
+		Intent intentFromCapture = new Intent(
+                MediaStore.ACTION_IMAGE_CAPTURE);
+		intentFromCapture.putExtra(MediaStore.EXTRA_OUTPUT,
+                Uri.fromFile(tempFile));
+		startActivityForResult(intentFromCapture, 102);
+	}
+	/**
+	 * 保存签到数据到数据库
+	 */
+	private void save2DB() {
+		SignBean signBean = new SignBean(bean.getName(),city,getWeek() + " " + date,curTime,llE.longitude,llE.latitude,2);
+		DBUtils.instance(this).save(signBean);
 	}
 
 	@Override
@@ -376,6 +395,7 @@ public class StaffSignActivity extends BaseActivity implements OnClickListener {
 		if (resultCode == RESULT_OK) {
 			switch (requestCode) {
 			case 102:
+				StaffSignActivity.this.showLoading("请稍后…", "signin");
 				new Thread(new Runnable() {
 
 					@Override

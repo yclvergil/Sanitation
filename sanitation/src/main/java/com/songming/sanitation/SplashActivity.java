@@ -34,9 +34,9 @@ public class SplashActivity extends BaseActivity {
 		super.onCreate(arg0);
 
 		// 百度云推送
-		PushManager.startWork(getApplicationContext(),
+		/*PushManager.startWork(getApplicationContext(),
 				PushConstants.LOGIN_TYPE_API_KEY,
-				Constants.PUSH_LOGIN_TYPE_API_KEY);
+				Constants.PUSH_LOGIN_TYPE_API_KEY);*/
 
 		// 判断点击图标的意图，如果是原来的应用不存在，点击应用ICON进入应用
 		// 如果应用已经存在用户点击HOME键之后重新点击应用的ICON 重新进入app保证进入的是按home键时的Activity
